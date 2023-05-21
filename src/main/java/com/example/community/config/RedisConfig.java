@@ -17,10 +17,10 @@ import javax.annotation.Resource;
 @Configuration
 public class RedisConfig {
 
-    @Bean
-    public JedisConnectionFactory redisConnectionFactory() {
-        return new JedisConnectionFactory();
-    }
+//    @Bean
+//    public JedisConnectionFactory redisConnectionFactory() {
+//        return new JedisConnectionFactory();
+//    }
 
     @Bean
     public RedisTemplate<String,Object> redisTemplate(RedisConnectionFactory redisConnectionFactory){
